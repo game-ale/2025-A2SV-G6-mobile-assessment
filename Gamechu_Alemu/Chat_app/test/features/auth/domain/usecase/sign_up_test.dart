@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecom/features/auth/domain/repositories/user_repository.dart';
+import 'package:Chat_app/features/auth/domain/repositories/user_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ecom/core/error/failure.dart';
-import 'package:ecom/features/auth/domain/entities/user.dart';
-import 'package:ecom/features/auth/domain/usecases/sign_up.dart';
+import 'package:Chat_app/core/error/failure.dart';
+import 'package:Chat_app/features/auth/domain/entities/user.dart';
+import 'package:Chat_app/features/auth/domain/usecases/sign_up.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'sign_up_test.mocks.dart';

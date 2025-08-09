@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ecom/features/auth/facade/auth_facade.dart';
+import 'package:Chat_app/features/auth/managers/authentication_manager.dart';
 import 'auth_event.dart';
 import 'auth_state.dart';
 

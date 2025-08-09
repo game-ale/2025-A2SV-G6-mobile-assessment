@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecom/core/error/failure.dart';
+import 'package:Chat_app/core/error/failure.dart';
 import '../entities/user.dart';
 
 abstract class UserRepository {

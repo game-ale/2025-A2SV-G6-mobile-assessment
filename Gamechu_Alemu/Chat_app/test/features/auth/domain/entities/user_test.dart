@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ecom/features/auth/domain/entities/user.dart';
+import 'package:Chat_app/features/auth/domain/entities/user.dart';
 
 void main() {
   group('User Entity', () {

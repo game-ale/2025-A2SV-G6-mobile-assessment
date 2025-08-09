@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ecom/injection_container.dart' as di;
+import 'package:Chat_app/injection_container.dart' as di;
 
 import 'features/auth/presentation/bloc/auth_bloc.dart';
 import 'features/auth/presentation/pages/sign_in_page.dart';
@@ -46,3 +46,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+

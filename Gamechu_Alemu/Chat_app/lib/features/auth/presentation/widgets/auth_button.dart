@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecom/core/constants/app_colors.dart';
+import 'package:Chat_app/core/themes/app_colors.dart';
 
 class AuthButton extends StatelessWidget {
   final String text;

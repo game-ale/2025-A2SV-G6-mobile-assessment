@@ -6,9 +6,9 @@
 import 'dart:async' as _i4;
 
 import 'package:dartz/dartz.dart' as _i2;
-import 'package:ecom/core/error/failure.dart' as _i5;
-import 'package:ecom/features/auth/domain/entities/user.dart' as _i6;
-import 'package:ecom/features/auth/domain/repositories/user_repository.dart'
+import 'package:Chat_app/core/error/failure.dart' as _i5;
+import 'package:Chat_app/features/auth/domain/entities/user.dart' as _i6;
+import 'package:Chat_app/features/auth/domain/repositories/user_repository.dart'
     as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 

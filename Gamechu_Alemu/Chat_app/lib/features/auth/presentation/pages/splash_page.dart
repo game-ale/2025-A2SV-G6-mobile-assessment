@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
-import '../../../../core/constants/app_colors.dart';
+import '../../../../core/themes/app_colors.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -41,7 +41,7 @@ class _SplashPageState extends State<SplashPage> {
         body: Stack(
           fit: StackFit.expand,
           children: [
-            Image.asset('assets/images/image.png', fit: BoxFit.cover),
+            Image.asset('assets/images/splashImage.png', fit: BoxFit.cover),
             // Color overlay with opacity
             Container(
               // ignore: deprecated_member_use

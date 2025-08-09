@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:ecom/core/error/exceptions.dart';
+import 'package:Chat_app/core/error/exceptions.dart';
 import '../models/user_model.dart';
 
 abstract class AuthRemoteDataSource {

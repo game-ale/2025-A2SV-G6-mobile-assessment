@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:ecom/core/error/exceptions.dart';
-import 'package:ecom/features/auth/data/datasources/auth_remote_data_source.dart';
-import 'package:ecom/features/auth/data/models/user_model.dart';
+import 'package:Chat_app/core/error/exceptions.dart';
+import 'package:Chat_app/features/auth/data/datasources/auth_remote_data_source.dart';
+import 'package:Chat_app/features/auth/data/models/user_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';

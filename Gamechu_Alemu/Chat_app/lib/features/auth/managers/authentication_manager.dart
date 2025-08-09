@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecom/core/error/failure.dart';
-import 'package:ecom/core/usecases/usecase.dart';
-// import where you defined the failures
+import 'package:Chat_app/core/error/failure.dart';
+import 'package:Chat_app/core/usecases/usecase.dart';
+
 
 import '../domain/entities/user.dart';
 import '../domain/usecases/login.dart';
@@ -77,9 +77,8 @@ class AuthFacade {
   }
 }
 
-// Dummy placeholder method: replace with actual cache retrieval logic
 Future<User?> _getCachedUser() async {
-  // For now return null (no user logged in)
+ 
   return null;
 }
 

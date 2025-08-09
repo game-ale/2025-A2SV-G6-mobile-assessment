@@ -10,7 +10,7 @@ import 'features/auth/domain/repositories/user_repository.dart';
 import 'features/auth/domain/usecases/login.dart';
 import 'features/auth/domain/usecases/logout.dart';
 import 'features/auth/domain/usecases/sign_up.dart';
-import 'features/auth/facade/auth_facade.dart';
+import 'features/auth/managers/authentication_manager.dart';
 import 'features/auth/presentation/bloc/auth_bloc.dart';
 
 final sl = GetIt.instance;
