@@ -1,0 +1,41 @@
+name: ecom
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+
+  cupertino_icons: ^1.0.8
+  connectivity_plus: ^6.1.4
+  dartz: ^0.10.1
+  flutter_secure_storage: ^9.2.4
+  http: ^1.4.0
+  equatable: ^2.0.7
+  flutter_bloc: ^9.1.1
+  get_it: ^8.2.0
+  shared_preferences_android: ^2.4.10
+  google_fonts: 6.3.0
+  cached_network_image: ^3.2.3
+  flutter_native_splash: ^2.4.6
+  jwt_decode: ^0.3.1
+  socket_io_client: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  mockito: ^5.4.0
+  build_runner: ^2.6.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
