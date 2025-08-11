@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart'; 
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
 import '../bloc/auth_state.dart';
@@ -17,9 +17,8 @@ class HomePage extends StatelessWidget {
           Navigator.pushReplacementNamed(context, '/signin');
         }
         if (state is AuthError) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(state.message)),
-          );
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(state.message)));
         }
       },
       child: Scaffold(
@@ -29,71 +28,54 @@ class HomePage extends StatelessWidget {
           title: const Text('Home Base Activated'),
           centerTitle: true,
           actions: [
-  Padding(
-    padding: const EdgeInsets.only(right: 12),
-    child: TextButton(
-      style: TextButton.styleFrom(
-        foregroundColor: Colors.redAccent.shade200, // Text color
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-      ),
-      onPressed: () {
-        context.read<AuthBloc>().add(LogoutRequested());
-      },
-      child: const Text(
-        'Logout',
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-      ),
-    ),
-  ),
-],
+            Padding(
+              padding: const EdgeInsets.only(right: 12),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.redAccent.shade200,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                ),
+                onPressed: () {
+                  context.read<AuthBloc>().add(LogoutRequested());
+                },
+                child: const Text(
+                  'Logout',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                ),
+              ),
+            ),
+          ],
           elevation: 4,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
           ),
         ),
         body: Center(
-          child: Card(
-            elevation: 8,
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-            child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CircleAvatar(
-                    radius: 48,
-                    backgroundColor: Colors.indigoAccent,
-                    child: Text(
-                      userEmail.substring(0, 1).toUpperCase(),
-                      style: const TextStyle(
-                          fontSize: 48,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.pinkAccent),
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  Text(
-                    'Welcome back to chatting app,',
-                    style: TextStyle(
-                      fontSize: 22,
-                      color: Colors.grey[700],
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  const SizedBox(height: 32),
-                  
-                ],
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset(
+                'assets/images/chatting.png',
+                width: 200,
+                height: 300,
               ),
-            ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () {
+                 
+                },
+                child: const Text('Start Chatting'),
+                style: ElevatedButton.styleFrom(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12)),
+                ),
+              ),
+            ],
           ),
         ),
       ),
     );
   }
 }
-
-
