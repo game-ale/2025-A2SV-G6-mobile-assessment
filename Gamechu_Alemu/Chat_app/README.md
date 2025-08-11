@@ -6,19 +6,24 @@ Tech Stack: Flutter · Dart · BLoC · Clean Architecture · REST API v2
 
 📸 ***Screenshots****
 
-##Splash Screen
+***Splash Screen***
 
 ![Splash Screen](assets/images/splash.png)
 
 
-##Sign In
+***Sign In***
+
 
 ![Sign In](assets/images/login.png)
     
-##Sign Up
+***Sign Up***
+
+
 ![Sign Up](assets/images/signup.png)
 
-##Home
+***Home Page ***
+
+
 ![Home](assets/images/home.png)
 
 ✨ Features
