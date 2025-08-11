@@ -78,7 +78,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Icon(Icons.arrow_back_ios_new, size: 20),
-                        Image.asset('assets/images/ecom_logo.png', height: 32),
+                        Image.asset('assets/ecom_logo.png', height: 32),
                       ],
                     ),
                     const SizedBox(height: 32),

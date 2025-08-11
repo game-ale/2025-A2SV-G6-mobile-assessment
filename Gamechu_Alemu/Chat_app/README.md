@@ -8,23 +8,23 @@ Tech Stack: Flutter · Dart · BLoC · Clean Architecture · REST API v2
 
 ***Splash Screen***
 
-![Splash Screen](assets/images/splash.png)
+![Splash Screen](assets/splash.png)
 
 
 ***Sign In***
 
 
-![Sign In](assets/images/login.png)
+![Sign In](assets/login.png)
     
 ***Sign Up***
 
 
-![Sign Up](assets/images/signup.png)
+![Sign Up](assets/signup.png)
 
 ***Home Page ***
 
 
-![Home](assets/images/home.png)
+![Home](assetser/home.png)
 
 ✨ Features
 🔑 User Authentication — Register, log in, and log out securely.

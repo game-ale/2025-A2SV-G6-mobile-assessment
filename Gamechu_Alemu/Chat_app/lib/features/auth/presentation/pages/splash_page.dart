@@ -41,7 +41,7 @@ class _SplashPageState extends State<SplashPage> {
         body: Stack(
           fit: StackFit.expand,
           children: [
-            Image.asset('assets/images/splashImage.png', fit: BoxFit.cover),
+            Image.asset('assets/splashImage.png', fit: BoxFit.cover),
             // Color overlay with opacity
             Container(
               // ignore: deprecated_member_use
@@ -57,7 +57,7 @@ class _SplashPageState extends State<SplashPage> {
                       30,
                     ), // You can adjust the radius
                     child: Image.asset(
-                      'assets/images/ecom_logo.png',
+                      'assets/ecom_logo.png',
                       width: 150,
                       height: 80,
 
