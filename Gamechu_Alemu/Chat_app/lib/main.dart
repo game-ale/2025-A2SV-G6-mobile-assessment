@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Ecommerce App',
         theme: ThemeData(primarySwatch: Colors.blue),
-        initialRoute: '/splash', // 👈 Show splash only on app launch
+        initialRoute: '/splash',
         routes: {
           '/': (context) => const SignInPage(),
           '/signin': (context) => const SignInPage(),
