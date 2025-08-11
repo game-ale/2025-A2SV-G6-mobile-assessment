@@ -48,6 +48,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+///------------uncomment this code to use the pure UI chat future and comment the above code------------
+///----- hopefully i will complete full iplementation of the chat app in soon-----
+
+
 /*
 import 'package:flutter/material.dart';
 import 'package:Chat_app/features/chat/presentation/pages/chat_list_page.dart';
