@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -25,20 +26,26 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blueGrey[50],
         appBar: AppBar(
           backgroundColor: Colors.indigo,
-          title: const Text('Welcome Home'),
+          title: const Text('Home Base Activated'),
           centerTitle: true,
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 12),
-              child: IconButton(
-                icon: const Icon(Icons.logout, size: 28),
-                tooltip: 'Logout',
-                onPressed: () {
-                  context.read<AuthBloc>().add(LogoutRequested());
-                },
-              ),
-            ),
-          ],
+  Padding(
+    padding: const EdgeInsets.only(right: 12),
+    child: TextButton(
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.redAccent.shade200, // Text color
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+      ),
+      onPressed: () {
+        context.read<AuthBloc>().add(LogoutRequested());
+      },
+      child: const Text(
+        'Logout',
+        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+      ),
+    ),
+  ),
+],
           elevation: 4,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
@@ -64,12 +71,12 @@ class HomePage extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 48,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white),
+                          color: Colors.pinkAccent),
                     ),
                   ),
                   const SizedBox(height: 24),
                   Text(
-                    'Welcome back,',
+                    'Welcome back to chatting app,',
                     style: TextStyle(
                       fontSize: 22,
                       color: Colors.grey[700],
@@ -88,3 +95,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
