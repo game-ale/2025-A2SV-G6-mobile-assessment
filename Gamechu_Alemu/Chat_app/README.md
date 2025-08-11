@@ -24,18 +24,18 @@ Tech Stack: Flutter · Dart · BLoC · Clean Architecture · REST API v2
 ***Home Page ***
 
 
-![Home](assetser/home.png)
+![Home](assets/home.png)
 
 ***Chatting List page***
 
 
-![Chatting](assetser/chatinglist.png)
+![Chatting](assets/chatinglist.png)
 
 
 ***Chatting room ***
 
 
-![Chatting room](assetser/chattingpage.png)
+![Chatting room](assets/chattingpage.png)
 
 ✨ Features
 🔑 User Authentication — Register, log in, and log out securely.
